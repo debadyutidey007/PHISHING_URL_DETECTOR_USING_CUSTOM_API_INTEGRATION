@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 225 67% 97%; /* A very light blue (#E8EAF6) */
+    --foreground: 226 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 226 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 25% 15%;
+    --primary: 233 47% 49%; /* A vigilant blue (#3F51B5) */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 225 50% 90%;
+    --secondary-foreground: 233 47% 29%;
+    --muted: 225 50% 94%;
+    --muted-foreground: 225 20% 45%;
+    --accent: 16 100% 57%; /* A caution orange (#FF5722) */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 350 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 225 25% 88%;
+    --input: 225 25% 92%;
+    --ring: 233 47% 49%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 226 25% 10%;
+    --foreground: 225 25% 95%;
+    --card: 226 25% 12%;
+    --card-foreground: 225 25% 95%;
+    --popover: 226 25% 10%;
+    --popover-foreground: 225 25% 95%;
+    --primary: 233 57% 79%;
+    --primary-foreground: 233 47% 19%;
+    --secondary: 226 25% 20%;
+    --secondary-foreground: 225 25% 95%;
+    --muted: 226 25% 20%;
+    --muted-foreground: 225 20% 65%;
+    --accent: 16 100% 67%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 350 74% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 226 25% 20%;
+    --input: 226 25% 22%;
+    --ring: 233 57% 79%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
